@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invito - Mariapia's Birthday Party</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Eleganti da Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- SCENA BUSTA E LETTERA -->
+    <div class="envelope-wrapper">
+        <div class="envelope" id="envelope">
+
+            <!-- Patte della busta -->
+            <div class="flap top-flap"></div>
+            <div class="flap left-flap"></div>
+            <div class="flap right-flap"></div>
+            <div class="flap bottom-flap"></div>
+
+            <!-- Sigillo in Cera -->
+            <div class="wax-seal" id="wax-seal">
+                <div class="seal-inner">
+                    <span>M</span>
+                </div>
+                <p class="seal-hint">Clicca per aprire l'invito</p>
+            </div>
+
+            <!-- LETTERA INTERNA (INVITO) -->
+            <div class="letter" id="letter">
+
+                <div class="corner corner-tl"></div>
+                <div class="corner corner-tr"></div>
+                <div class="corner corner-bl"></div>
+                <div class="corner corner-br"></div>
+
+                <header class="header">
+                    <!-- <p class="pretitle">JOIN US TO CELEBRATE</p> -->
+                    <h1 class="main-title">Mariapia’s<br><span>Birthday Party</span></h1>
+                </header>
+
+                <!-- DETTAGLI DATA -->
+                <section class="event-details">
+                    <div class="date-block">
+                        <span class="day-name">SABATO</span>
+                        <div class="day-number">03</div>
+                        <span class="month">OTTOBRE 2026</span>
+                        <br>
+                        <span class="time">ORE 20:00</span>
+                    </div>
+                </section>
+
+                <section class="event-details">
+                    <div class="day-name">
+                        <p>Ti aspetto presso <br>
+                            <b>Villa Calvo Ricevimenti</b> <br>
+                            per festeggiare insieme
+                        </p>
+                    </div>
+                </section>
+
+                <!-- PULSANTE LOCATION -->
+                <section class="actions">
+                    <a href="https://maps.app.goo.gl/Wi8vAZdPbue4DRD86" target="_blank" rel="noopener"
+                        class="action-btn">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        </svg>
+                        <span>LOCATION</span>
+                    </a>
+                </section>
+
+                <!-- CONTO ALLA ROVESCIA -->
+                <section class="countdown-section">
+                    <p class="countdown-title">È gradita conferma, mancano solo:</p>
+                    <div class="countdown" id="countdown">
+                        <div class="time-box"><span id="cd-days">00</span><small>Giorni</small></div>
+                        <div class="time-box"><span id="cd-hours">00</span><small>Ore</small></div>
+                        <div class="time-box"><span id="cd-minutes">00</span><small>Min</small></div>
+                        <div class="time-box"><span id="cd-seconds">00</span><small>Sec</small></div>
+                    </div>
+                </section>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
